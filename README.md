@@ -8,19 +8,9 @@ Developed in Node.js together with the Express framework. Database in PostgreSQL
 ### Creating database
 
 First, we run in the server directory:
-`sudo -u postgres psql`
-
-Then, we create the database:
-`CREATE DATABASE budgetWiseDb;`
-
-You move to this new database with:
-`\c budgetwisedb;`
-
-Now we create a new table:
-`CREATE TABLE movement ( movement_id SERIAL PRIMARY KEY, amount REAL NOT NULL, concept VARCHAR(255) NOT NULL, dateM DATE NOT NULL, typeM CHAR NOT NULL );`
-
-If you want to quit from here, you simply run:
-`\q`
+`createdb budgetwisedb`
+Then, run the following command to setup the PostgresSQL database schema:
+`psql -d budgetwisedb < database.sql`
 
 ### Starting server
 
@@ -32,3 +22,5 @@ Runs the app in the development mode.
 Open [http://localhost:5000](http://localhost:5000) to view it in your browser.
 
 You may also see any lint errors in the console.
+
+Now, to view the app with its front-end, leave the server open and follow the steps at: https://github.com/ezequielmgonzalez/client-budget-wise .
