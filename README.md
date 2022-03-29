@@ -11,7 +11,7 @@ First, we run in the server directory: \
 `createdb budgetwisedb` \
 If it doesn't work, use this one: \
 `sudo -u postgres psql` \
-`CREATE DATABASE budgetWiseDb;`
+`CREATE DATABASE budgetWiseDb;` \
 And get out with: \
 `\q`
 
