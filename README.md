@@ -19,6 +19,9 @@ You move to this new database with:
 Now we create a new table:
 `CREATE TABLE movement ( movement_id SERIAL PRIMARY KEY, amount REAL NOT NULL, concept VARCHAR(255) NOT NULL, dateM DATE NOT NULL, typeM CHAR NOT NULL );`
 
+If you want to quit from here, you simply run:
+`\q`
+
 ### Starting server
 
 In the project directory, you can run:
