@@ -8,7 +8,7 @@ Developed in Node.js together with the Express framework. Database in PostgreSQL
 ### Creating database
 
 First, we run in the server directory:
-`createdb budgetwisedb`
+`createdb budgetwisedb` \
 Then, run the following command to setup the PostgresSQL database schema:
 `psql -d budgetwisedb < database.sql`
 
