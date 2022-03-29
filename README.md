@@ -9,10 +9,10 @@ Developed in Node.js together with the Express framework. Database in PostgreSQL
 
 First, we run in the server directory: \
 `createdb budgetwisedb` \
-If it doesn't work, use this one:
-`sudo -u postgres psql
+If it doesn't work, use this one: \
+`sudo -u postgres psql \
 CREATE DATABASE budgetWiseDb;`
-And get out with:
+And get out with: \
 `\q`
 
 Then, run the following command to setup the PostgresSQL database schema: \
