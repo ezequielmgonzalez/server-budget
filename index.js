@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 
 // Serve the static files from the React app
-app.use(express.static(path.join(__dirname, "../my-app")));
+app.use(express.static(path.join(__dirname, "../../my-app")));
 
 // Handles any other requests that don't match
 // app.get("*", (req, res) => {
@@ -45,6 +45,20 @@ app.get("/movements", async (req, res) => {
     res.json(allMovements.rows);
   } catch (e) {
     console.error(e.message);
+  }
+});
+
+// Get only selected type of movements
+app.get("/movements/type/:t", async (req, res) => {
+  try {
+    const { t } = req.params;
+    const allSelected = await pool.query(
+      "SELECT * FROM movement WHERE typem = $1 ORDER BY movement_id DESC",
+      [t]
+    );
+    res.json(allSelected.rows);
+  } catch (e) {
+    console.error(e);
   }
 });
 
