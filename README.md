@@ -10,8 +10,8 @@ Developed in Node.js together with the Express framework. Database in PostgreSQL
 First, we run in the server directory: \
 `createdb budgetwisedb` \
 If it doesn't work, use this one: \
-`sudo -u postgres psql \
-CREATE DATABASE budgetWiseDb;`
+`sudo -u postgres psql` \
+`CREATE DATABASE budgetWiseDb;`
 And get out with: \
 `\q`
 
