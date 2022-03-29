@@ -8,15 +8,10 @@ const app = express();
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, "../../my-app")));
 
-// Handles any other requests that don't match
-// app.get("*", (req, res) => {
-//     res.sendFile(path.join(__dirname+"../public/index.html"))
-// })
-
 // middleware
 // Allows different domains of the app to interact (localhost:5000 from the back with localhost:3000 from the front).
 app.use(cors());
-// req.body
+// Allows the use of req.body
 app.use(express.json());
 
 // Routes

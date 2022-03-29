@@ -1,4 +1,4 @@
-CREATE DATABASE budgetWiseDb;
+CREATE USER testuser WITH PASSWORD 'pAssw0rd';
 
 CREATE TABLE movement (
     movement_id SERIAL PRIMARY KEY,
@@ -7,3 +7,6 @@ CREATE TABLE movement (
     dateM DATE NOT NULL,
     typeM CHAR NOT NULL
 );
+
+ALTER TABLE movement OWNER TO testuser;
+ALTER SEQUENCE movement_movement_id_seq OWNER TO testuser;
