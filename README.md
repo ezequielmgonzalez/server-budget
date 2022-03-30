@@ -3,6 +3,13 @@
 Backend for BudgetWise, an app that consists of managing your personal budget. \
 Developed in Node.js together with the Express framework. Database in PostgreSQL. 
 
+## Frontend
+
+The repo for the frontend:
+
+https://github.com/ezequielmgonzalez/client-budget-wise .
+
+
 ## Getting started
 
 ### Creating database
